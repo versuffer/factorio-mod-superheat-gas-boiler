@@ -1,0 +1,13 @@
+{
+    "name": "superheat-gas-boiler",
+    "version": "1.0.0",
+    "title": "Superheat Gas Boiler",
+    "author": "adamo",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base",
+        "space-age >= 2.0"
+    ],
+    "space_travel_required": true,
+    "description": "This mod is not standalone and intended to be used with other mods. Adds superheat gas boiler that consumes fluids with fuel_value, has max. consumption of 11.6 MW and generates superheated (500 °C) steam. Generates 120/s steam and can supply two steam turbines."
+}

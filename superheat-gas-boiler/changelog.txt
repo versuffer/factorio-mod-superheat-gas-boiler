@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 07. 05. 2026
+  Entities:
+    - "Superheat gas boiler" entity ADDED
+  Items:
+    - "Superheat gas boiler" item ADDED
+  Recipes:
+    - "Superheat gas boiler" recipe ADDED
