@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 30. 07. 2026
+  Minor changes:
+    - Compatibility with Factorio 2.1 ADDED
+  Entities:
+    - water_reflection ADDED
+    - light_flicker color FIXED
+  Graphics:
+    - thumbnail.png ADDED
+    - superheat-gas-boiler-reflection.png ADDED
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 07. 05. 2026
   Entities:

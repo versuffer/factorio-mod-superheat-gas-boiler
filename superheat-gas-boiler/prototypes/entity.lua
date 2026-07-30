@@ -1,3 +1,21 @@
+function boiler_reflection()
+  return
+  {
+    pictures =
+    {
+      filename = "__superheat-gas-boiler__/graphics/entity/superheat-gas-boiler-reflection.png",
+      priority = "extra-high",
+      width = 28,
+      height = 32,
+      shift = util.by_pixel(5, 30),
+      variation_count = 4,
+      scale = 5
+    },
+    rotate = false,
+    orientation_to_variation = true
+  }
+end
+
 local superheat_gas_boiler_entity = table.deepcopy(data.raw.boiler.boiler)
 superheat_gas_boiler_entity.name = "superheat-gas-boiler"
 superheat_gas_boiler_entity.icon = "__superheat-gas-boiler__/graphics/icons/superheat-gas-boiler.png"
@@ -10,6 +28,7 @@ superheat_gas_boiler_entity.fast_replaceable_group = "boiler"
 superheat_gas_boiler_entity.max_health = 400
 superheat_gas_boiler_entity.energy_consumption = "11.6MW"
 superheat_gas_boiler_entity.target_temperature = 500
+superheat_gas_boiler_entity.use_fuel_glow_color = true
 superheat_gas_boiler_entity.energy_source = {
 	type = "fluid",
 	fluid_box = {
@@ -74,7 +93,7 @@ superheat_gas_boiler_entity.energy_source = {
 			starting_frame_deviation = 0
 	}},
 	light_flicker = {
-		color = {r=100, g=19, b=19},
+		color = {r=0,g=230,b=255},
 		minimum_light_size = 0.1,
 		light_intensity_to_size_coefficient = 1
 	}
@@ -107,6 +126,8 @@ superheat_gas_boiler_entity.pictures.west.fire_glow.apply_runtime_tint = true
 superheat_gas_boiler_entity.pictures.west.fire_glow.tint = {r=176,g=250,b=255}
 superheat_gas_boiler_entity.pictures.west.fire_glow.blend_mode = "additive"
 superheat_gas_boiler_entity.pictures.west.fire_glow.draw_as_glow = true
+
+superheat_gas_boiler_entity.water_reflection = boiler_reflection()
 
 data.extend(
     {
